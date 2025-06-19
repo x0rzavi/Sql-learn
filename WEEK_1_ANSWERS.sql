@@ -10,79 +10,18 @@ create table patient (
 );
 
 -- Insert data
-insert all into patient (
-   p_id,
-   p_name,
-   p_dob,
-   p_ailment,
-   p_bill,
-   p_contact,
-   p_addr
-) values ( 'P1',
-           'Amit',
-           '15-JUN-1955',
-           'Diabetes',
-           18000,
-           9876543210,
-           'Kolkata' ) into patient (
-   p_id,
-   p_name,
-   p_dob,
-   p_ailment,
-   p_bill,
-   p_contact,
-   p_addr
-) values ( 'P2',
-           'Rina',
-           '23-NOV-1982',
-           'Heart',
-           25000,
-           9876543211,
-           'Delhi' ) into patient (
-   p_id,
-   p_name,
-   p_dob,
-   p_ailment,
-   p_bill,
-   p_contact,
-   p_addr
-) values ( 'P3',
-           'Soham',
-           '10-APR-1987',
-           'Tension',
-           15000,
-           9876543212,
-           'Kolkata' ) into patient (
-   p_id,
-   p_name,
-   p_dob,
-   p_ailment,
-   p_bill,
-   p_contact,
-   p_addr
-) values ( 'P4',
-           'Neha',
-           '01-SEP-1992',
-           'Arthritis',
-           22000,
-           9876543122,
-           'Mumbai' ) into patient (
-   p_id,
-   p_name,
-   p_dob,
-   p_ailment,
-   p_bill,
-   p_contact,
-   p_addr
-) values ( 'P5',
-           'Rajesh',
-           '05-DEC-1950',
-           'Heart',
-           30000,
-           9876543215,
-           'Kolkata' ) select 1
-              from dual;
-
+INSERT ALL
+   INTO PATIENT(P_ID, P_NAME, P_DOB, P_AILMENT, P_BILL, P_CONTACT, P_ADDR)
+   VALUES ('P1', 'Amit', '15-JUN-1955', 'Diabetes', 18000, 9876543210, 'Kolkata')
+   INTO PATIENT(P_ID, P_NAME, P_DOB, P_AILMENT, P_BILL, P_CONTACT, P_ADDR)
+   VALUES ('P2', 'Rina', '23-NOV-1982', 'Heart', 25000, 9876543211, 'Delhi')
+   INTO PATIENT(P_ID, P_NAME, P_DOB, P_AILMENT, P_BILL, P_CONTACT, P_ADDR)
+   VALUES ('P3', 'Soham', '10-APR-1987', 'Tension', 15000, 9876543212, 'Kolkata')
+   INTO PATIENT(P_ID, P_NAME, P_DOB, P_AILMENT, P_BILL, P_CONTACT, P_ADDR)
+   VALUES ('P4', 'Neha', '01-SEP-1992', 'Arthritis', 22000, 9876543122, 'Mumbai')
+   INTO PATIENT(P_ID, P_NAME, P_DOB, P_AILMENT, P_BILL, P_CONTACT, P_ADDR)
+   VALUES ('P5', 'Rajesh', '05-DEC-1950', 'Heart', 30000, 9876543215, 'Kolkata')
+SELECT 1 FROM DUAL;
 
 -- 2
 select *
